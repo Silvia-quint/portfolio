@@ -1,9 +1,13 @@
 :root{
+    --fondo: #f2c4ff;
+    --primario: #ffc107;
+    --secundario: #0082a3;
+    --extra: #7de8e5;
+    --sombreado: #9788a1;
     --blanco: #ffffff;
     --negro: #212121;
-    --primario: #ffc107;
-    --secundario: #0097a7;
     --gris: #757575;
+    
 
 
 }
