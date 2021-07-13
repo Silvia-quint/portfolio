@@ -25,9 +25,25 @@ body{
     font-size: 2rem;
 }
 .contenedor{
-    width: 120rem;
+    width: 100rem;
+    /*margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;*/
+    margin: 0 auto;
+   
+}
+.nav-bg{
+    background-color: var(--secundario);
     
 }
-.barra-navegacion{
-    background-color: var(--secundario);
+.barra-navegacion {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.barra-navegacion a{
+    /*background-color: var(--primario);*/
+    color: var(--blanco);
+    text-decoration: none;
 }
