@@ -1,18 +1,19 @@
 :root{
-    --fondo: #f2c4ff;
+    --extra: #f2c4ff;
     --primario: #ffc107;
     --secundario: #0082a3;
-    --extra: #7de8e5;
-    --sombreado: #9788a1;
+    --fondo1: #98c7d3;
+    --fondo2: #e1f8ff;
+    --sombreado: #4c7883;
     --blanco: #ffffff;
     --negro: #212121;
     --gris: #757575;
 }
 
+/* global*/
 html{
-    font-size: 62.5%;
-    box-sizing: border-box;
-    background-color: var(--fondo);
+    font-size: 62.5%; /*ayuda a igualar tamaño de letra con medida rem*/
+    box-sizing: border-box; /*hack para box-model*/
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -20,6 +21,7 @@ html{
 body{
     font-size: 16px; /*1rem = 10px */
     font-family: 'Bona Nova', serif;
+    background-image: linear-gradient(to top, var(--fondo1) 0%, var(--fondo2) 60%) ;
 }
 /*@media (min-width: 2000px) {
      body::before{
@@ -41,6 +43,7 @@ body{
      }
 }*/
 
+/*tipografia titulos*/
 h1{
     text-transform: uppercase;
     font-size: 3.8rem;
@@ -57,27 +60,47 @@ h1,h2,h3{
 .titulo span{
     font-size: 2rem;
 }
+
+
 .contenedor{
     max-width: 120rem;
-    /*margin-top: 0;
+    margin: 0 auto; 
+    /*esta linea equivale a: 
+    margin-top: 0;
     margin-right: auto;
     margin-bottom: 0;
     margin-left: auto;*/
-    margin: 0 auto;
-   
 }
 .boton{
     background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    width:90%;
+    text-align: center;
 }
+
+@media (min-width: 768px) {
+     .boton{
+         width: auto;
+     }
+}
+
 .nav-bg{
     background-color: var(--secundario);
 }
+
 .barra-navegacion {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-@media (min-width: 780px) {
+@media (min-width: 768px) {
     .barra-navegacion{
         flex-direction: row;
         justify-content: space-between;
@@ -117,11 +140,11 @@ h1,h2,h3{
 .contenido-presentacion p{
     color: var(--blanco)
 }
-.ubicacion{
+.contenido-presentacion .ubicacion{
     display:flex;
     align-items: flex-end;
 }
-.ubicacion p{
+.contenido-presentacion .ubicacion p{
     margin-left: 10px;
 }
 
