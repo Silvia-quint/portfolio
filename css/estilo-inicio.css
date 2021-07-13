@@ -1,16 +1,17 @@
 :root{
-    --extra: #f2c4ff;
+    
     --primario: #ffc107;
     --secundario: #0082a3;
     --fondo1: #98c7d3;
-    --fondo2: #e1f8ff;
+    --fondo2: #cef5ff;
+    --fondo3: #cef5ff;
     --sombreado: #4c7883;
     --blanco: #ffffff;
     --negro: #212121;
     --gris: #757575;
 }
 
-/* global*/
+/* global */
 html{
     font-size: 62.5%; /*ayuda a igualar tamaño de letra con medida rem*/
     box-sizing: border-box; /*hack para box-model*/
@@ -43,6 +44,13 @@ body{
      }
 }*/
 
+.sombra{
+    box-shadow: 0px 5px 15px 0px rgba(29,89,117,1);
+    background-color: var(--fondo3);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
 /*tipografia titulos*/
 h1{
     text-transform: uppercase;
@@ -61,7 +69,7 @@ h1,h2,h3{
     font-size: 2rem;
 }
 
-
+/*etiquetas body*/
 .contenedor{
     max-width: 120rem;
     margin: 0 auto; 
@@ -94,7 +102,7 @@ h1,h2,h3{
 .nav-bg{
     background-color: var(--secundario);
 }
-
+/* Menu navegacion y caja presentacion*/
 .barra-navegacion {
     display: flex;
     flex-direction: column;
@@ -123,6 +131,7 @@ h1,h2,h3{
     background-size: cover;
     height: 400px;
     position: relative;
+    margin-bottom: 2rem;
 }
 .contenido-presentacion{
     position: absolute;
@@ -148,6 +157,21 @@ h1,h2,h3{
     margin-left: 10px;
 }
 
+/*Caja sevicios*/
+@media (min-width: 768px) {
+     .servicios{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr)
+    /*grid-template-columns: 1fr 1fr 1fr; */
+    /*fr = fraccion del entero, es decir, divide el 100% en las partes que se determine*/
+
+    /*grid-template-columns: 300px 300px;
+    grid-template-rows: 200px 800px;*/
+    /*esto se simplificaria asi: 
+    grid: 200px 800px / 300px 300px; (primero medidas de rows y luego medidas de colums*/
+
+}
+}
 
 
 
