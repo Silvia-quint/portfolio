@@ -11,21 +11,53 @@
 
 html{
     font-size: 62.5%;
+    box-sizing: border-box;
 }
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
 body{
     font-size: 16px; /*1rem = 10px */
     font-family: 'Bona Nova', serif;
 }
-.titulo {
-    text-align: center;
+/*@media (min-width: 2000px) {
+     body::before{
+        content: '';
+        display: inline-block;
+        position: absolute;
+        width: 15%;
+        border-style: solid;
+        border-color: var(--sombreado);
+        background-color: var(--sombreado);
+     }
+     body::after{
+        content: '';
+        display: inline-block;
+        width: 15%;
+        border-style: solid;
+        border-color: var(--sombreado);
+        background-color: var(--sombreado);
+     }
+}*/
+
+h1{
     text-transform: uppercase;
     font-size: 3.8rem;
-    }
+}
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 1.8rem;
+}
+h1,h2,h3{
+    text-align: center;
+}
 .titulo span{
     font-size: 2rem;
 }
 .contenedor{
-    width: 100rem;
+    max-width: 120rem;
     /*margin-top: 0;
     margin-right: auto;
     margin-bottom: 0;
@@ -35,15 +67,92 @@ body{
 }
 .nav-bg{
     background-color: var(--secundario);
-    
 }
 .barra-navegacion {
-    padding: 1rem;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+@media (min-width: 780px) {
+    .barra-navegacion{
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 .barra-navegacion a{
-    /*background-color: var(--primario);*/
     color: var(--blanco);
     text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
 }
+.barra-navegacion a:hover{
+    background-color: var(--primario);
+    color: var(--negro);
+}
+.presentacion{
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+}
+.contenido-presentacion{
+    position: absolute;
+    background-color: rgba(158, 82, 82, 0.7);
+    /*opcion nueva*/ background-color: rgb(0 0 0 / 70%);
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contenido-presentacion h2,
+.contenido-presentacion p{
+    color: var(--blanco)
+}
+.ubicacion{
+    display:flex;
+    align-items: flex-end;
+}
+.ubicacion p{
+    margin-left: 10px;
+}
+
+
+
+
+/*EJEMPLO RESPONSIVE WEB DESIGN CON DIFERENTES MEDIDAS*/
+    /*Escritorio*
+    @media (min-width: 1199.98px)  {
+        body{background: red;}
+    }
+    /*Fin Escritorio*/
+
+    /*Tablet*/
+    /*Portrait*
+    @media (min-width: 576px) and (max-width: 991.98px) and (orientation:portrait) {
+        body{background: orange;}
+    }
+
+    /*landscape*
+    @media (min0-width: 991.98px) and (max-width: 1199.98px)and (orientation:landscape) {
+        body{background: blue;}
+    }
+    /*fin tablet*/
+
+    /*movil*/
+    /*Portrait*/
+    /*Default*
+    @media (max-width: 575.98px)and (orientation:portrait) {
+        body{background: green;}
+    }
+    /*landscape*
+    @media (min-width: 576px) and (max-width: 991.98px) and (orientation:landscape) {
+        body{background: black;}
+    }
+    /*fin movil*/
+
+
