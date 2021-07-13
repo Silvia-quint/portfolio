@@ -7,9 +7,6 @@
     --blanco: #ffffff;
     --negro: #212121;
     --gris: #757575;
-    
-
-
 }
 
 html{
@@ -26,4 +23,11 @@ body{
     }
 .titulo span{
     font-size: 2rem;
+}
+.contenedor{
+    width: 120rem;
+    
+}
+.barra-navegacion{
+    background-color: var(--secundario);
 }
