@@ -156,8 +156,8 @@ h1,h2,h3{
     background-color: var(--primario);
     color: var(--negro);
 }
-.presentacion{
-    background-image: url(../img/img-opcion3.jpg);
+.presentacion, .presentacion-sobre-mi, .presentacion-proyectos, .presentacion-contacto{
+    background-image: url(../img/img-inicio.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 350px;
@@ -280,18 +280,28 @@ h1,h2,h3{
 
 /*HTML - SOBRE-MI -> ESTILOS*/
 /*Caja .sobre-mi*/
-.presentacion .sobre-mi{
-    background-image: url(../img/img-opcion3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 350px;
-    position: relative;
-    margin-bottom: 2rem;
+.presentacion-sobre-mi{
+    background-image: url(../img/img-sobre-mi.jpg);
+    background-position-y: -22rem;
+    height: 230px;
 }
 
 /*HTML - PROYECTOS -> ESTILOS*/
 /*Caja .proyectos*/
+.presentacion-proyectos{
+    background-image: url(../img/img-proyectos.jpg);
+    background-position-y: -5rem;
+    height: 230px;
+}
 
+/*HTML - CONTACTO -> ESTILOS*/
+/*Caja .contacto*/
+
+.presentacion-contacto{
+    background-image: url(../img/img-contacto.png);
+    background-position-y: -15rem;
+    height: 230px;
+}
 
 
 
