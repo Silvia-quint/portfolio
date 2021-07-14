@@ -14,14 +14,14 @@
     <link rel="stylesheet" href="css/estilo-inicio.css">
 </head>
 <body>
-    <header>
+    <header id="inicio">
          <h1 class="titulo">Silvia Quintero <span>Freelancer</span></h1>
          <div class="nav-bg">
              <nav class="barra-navegacion contenedor">
-                 <a href="#">Inicio</a>
-                 <a href="#">Sobre mi</a>
-                 <a href="#">Proyectos</a>
-                 <a href="#">Contacto</a>
+                 <a href="#inicio">Inicio</a>
+                 <a href="#" target="_blanck">Sobre mi</a>
+                 <a href="#" target="_blanck">Proyectos</a>
+                 <a href="#contacto">Contacto</a>
              </nav>
          </div>
     </header>
@@ -40,7 +40,7 @@
                 </svg> 
                 <p>Alcala de Henares, Madrid</p> 
             </div>
-            <a class="boton" href="#">Contactar</a>
+            <a class="boton" href="#contacto">Contactar</a>
         </div> <!-- cierra .contenido-presentacion-->
     </section>
 
@@ -111,9 +111,9 @@
             </section>
         </div> <!-- cierre .servicios-->
 
-        <section>
+        <section >
             <h2>Contacto</h2>
-            <form class="formulario">
+            <form id="contacto" class="formulario">
                 <fieldset>
                     <legend>Completa la información de contacto</legend>
                     <div class="campos-formulario">
@@ -144,8 +144,8 @@
             </form>
         </section>
     </main>
-    <footer>
-        <p>Todos los derechos reservados Silvia Quintero.</p>
+    <footer class="pie-web">
+          <p>Todos los derechos reservados - Silvia Quintero.</p> 
     </footer>
 </body>
 </html>
