@@ -5,7 +5,7 @@
     --fondo1: #98c7d3;
     --fondo2: #cef5ff;
     --fondo3: #e9faff;
-    --sombreado: #4c7883;
+    --sombreado: #809ba3;
     --blanco: #ffffff;
     --negro: #212121;
     --gris: #757575;
@@ -15,6 +15,7 @@
 html{
     font-size: 62.5%; /*ayuda a igualar tamaño de letra con medida rem*/
     box-sizing: border-box; /*hack para box-model*/
+    
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -91,17 +92,39 @@ h1,h2,h3{
     border-radius: 0.5rem;
     width:90%;
     text-align: center;
+    border: none;
 }
-
+.boton:hover{
+    cursor: pointer;
+}
 @media (min-width: 768px) {
      .boton{
          width: auto;
      }
 }
+/*UTILIDADES GENERALES*/
 
+.w-sm-100{
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+     .w-sm-100{
+         width: auto;
+     }
+}
+.flex{
+    display: flex;
+}
+.alinear-dch{
+    justify-content: end;
+}
 .nav-bg{
     background-color: var(--secundario);
 }
+
+
+
 /* Menu navegacion y caja presentacion*/
 .barra-navegacion {
     display: flex;
@@ -221,6 +244,26 @@ h1,h2,h3{
     color: var(--primario);
 }
 
+.campos-formulario{
+
+}
+
+.campo{
+    margin-bottom: 1rem;
+}
+
+.campo label{
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.imput-text{
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
 
 
 
