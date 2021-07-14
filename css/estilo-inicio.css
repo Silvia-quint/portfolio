@@ -15,8 +15,16 @@
 html{
     font-size: 62.5%; /*ayuda a igualar tamaño de letra con medida rem*/
     box-sizing: border-box; /*hack para box-model*/
+    scroll-snap-type: y mandatory; /*Herramienta que ayuda a desplazar el scroll de seccion en seccion de forma mas intuitiva*/
     
 }
+
+/*SCROLL-SNAP*/
+.servicios, .barra-navegacion, .formulario{
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
 *, *:before, *:after {
     box-sizing: inherit;
   }
@@ -180,6 +188,8 @@ h1,h2,h3{
     margin-left: 10px;
 }
 
+
+
 /*Caja sevicios*/
 @media (min-width: 768px) {
      .servicios{
@@ -200,7 +210,6 @@ h1,h2,h3{
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .servicio p{
@@ -223,6 +232,8 @@ h1,h2,h3{
     align-items: center;
 }
 
+/*FORMULARIO CONTACTO*/
+
 .formulario{
     background-color: var(--sombreado);
     width: min(60rem, 100%); /*Utiliza el valor mas pequeño de los dos indicados. Ayuda a ahorrar codigo para las mediaqueries*/
@@ -236,16 +247,11 @@ h1,h2,h3{
 }
 
 .formulario legend{
-    text-align: center;
     font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: bold;
-    margin-bottom: 2rem;
+    margin: 1rem auto;
     color: var(--primario);
-}
-
-.campos-formulario{
-
 }
 
 .campo{
