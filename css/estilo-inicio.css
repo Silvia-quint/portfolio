@@ -282,7 +282,8 @@ h1,h2,h3{
 /*Caja .sobre-mi*/
 .presentacion-sobre-mi{
     background-image: url(../img/img-sobre-mi.jpg);
-    background-position-y: -22rem;
+    /*background-position: center;
+    background-position-y: -22rem;*/
     height: 230px;
 }
 
@@ -290,7 +291,7 @@ h1,h2,h3{
 /*Caja .proyectos*/
 .presentacion-proyectos{
     background-image: url(../img/img-proyectos.jpg);
-    background-position-y: -5rem;
+    /*background-position-y: -5rem;*/
     height: 230px;
 }
 
@@ -299,7 +300,7 @@ h1,h2,h3{
 
 .presentacion-contacto{
     background-image: url(../img/img-contacto.png);
-    background-position-y: -15rem;
+    /*background-position-y: -15rem;*/
     height: 230px;
 }
 
