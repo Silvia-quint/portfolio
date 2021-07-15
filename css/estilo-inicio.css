@@ -56,9 +56,9 @@ body{
 }
 
 /*SCROLL-SNAP*/
-.servicios, .barra-navegacion, .formulario, 
+.inicio, .contenedor, .contacto, 
 .sobre-mi, .proyectos{
-    scroll-snap-align: center;
+    scroll-snap-align: start;
     scroll-snap-stop: always;
 }
 
