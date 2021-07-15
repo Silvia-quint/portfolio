@@ -15,7 +15,7 @@
 html{
     font-size: 62.5%; /*ayuda a igualar tamaño de letra con medida rem*/
     box-sizing: border-box; /*hack para box-model*/
-    scroll-snap-type: y mandatory; /*Herramienta que ayuda a desplazar el scroll de seccion en seccion de forma mas intuitiva*/
+    /*scroll-snap-type: y mandatory; /*Herramienta que ayuda a desplazar el scroll de seccion en seccion de forma mas intuitiva*/
 }
 
 *, *:before, *:after {
@@ -57,13 +57,10 @@ body{
 
 /*SCROLL-SNAP*/
 
-.inicio, .contenedor, .formulario{
+/*.inicio, .contenedor, .formulario{
     scroll-snap-align: start;
     scroll-snap-stop: always;
-}
-
-
-
+}*/
 
 /*tipografia titulos*/
 h1{
