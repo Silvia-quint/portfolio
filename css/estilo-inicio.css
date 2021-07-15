@@ -56,11 +56,14 @@ body{
 }
 
 /*SCROLL-SNAP*/
-.inicio, .contenedor, .contacto, 
-.sobre-mi, .proyectos{
+
+.inicio, .contenedor, .formulario{
     scroll-snap-align: start;
     scroll-snap-stop: always;
 }
+
+
+
 
 /*tipografia titulos*/
 h1{
